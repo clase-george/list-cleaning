@@ -1,4 +1,5 @@
 # list-cleaning
+**Anotaciones, no me deja usar record en esta version de java, asi que he creado las clases con constructores y atributos
 Ejercicio 1 de repaso java I - Limpiar lista
 
 ## **1) Lista limpia de asistentes (List + Set + `removeIf`)**
