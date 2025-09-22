@@ -20,6 +20,10 @@ public class App
             String primerUpperCase = Asistente.primeraUpperCase(nombreLimpio);
             System.out.println(primerUpperCase);
         }
-        
+        Asistente.emailValido(asistentes);
+        System.out.println("Asistentes con email valido:");
+        for(Asistente a : asistentes){
+            System.out.println(a);
+        }
     }
 }
