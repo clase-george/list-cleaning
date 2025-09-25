@@ -21,8 +21,8 @@ public record Records() {
             !verificador.matcher(asistente.email()).matches()); //verificamos con matcher que el email cumple el patron del regex, si no lo cumple lo eliminamos
         }
         public static void eliminarDuplicados(List<Asistente> asistentes){
-            Set<String> vistos = new HashSet<>(); //creamos un set para almacenar los nombres que ya hemos visto, el set no permite duplicados
-            asistentes.removeIf(asistente-> !vistos.add(asistente.email())); //En el lambda puedo poner lo que sea, se sobre entiende que es un elemento de la lista
+            Set<String> correo = new HashSet<>(); //creamos un set para almacenar los nombres que ya hemos visto, el set no permite duplicados
+            asistentes.removeIf(asistente-> !correo.add(asistente.email())); //En el lambda puedo poner lo que sea, se sobre entiende que es un elemento de la lista
         }                                                                    //se borrara de la lista el elemento asistente que no se añada al Hash ya que eso significa que esta repetido
     }
     public record Artista(String nombre, Set<String> generos) {}
